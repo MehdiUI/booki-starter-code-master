@@ -154,6 +154,7 @@ body {
     display: flex; /* Flexbox pour aligner les éléments horizontalement */
     align-items: center; /* Centre verticalement le texte et l'icône */
     gap: 10px; /* Espace entre le texte et l'icône */
+    margin-top: 35px;
   }
   
   .circle-icon {
@@ -184,6 +185,7 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+    width: 100%;
 }
 
 .section-title {
@@ -194,6 +196,7 @@ a {
 
   
 .card {
+
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -231,8 +234,104 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+  width: 67%;
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap  ;
+
 }
+
+.herbergements-card {
+  width:100%; /* Chaque carte occupe 32% de la largeur du parent */
+  margin-bottom: 20px; /* Espacement en bas pour éviter le chevauchement vertical */
+  box-sizing: border-box; /* S'assure que le padding et les bordures sont inclus dans la largeur */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.herbergements-card .card {
+  display: flex;
+  flex-direction: column; /* Ajoute cette ligne pour empiler l'image et le texte */
+  margin-top: 33px;
+  border: 1px solid #ddd; /* Optionnel : pour ajouter une bordure */
+  border-radius: 20px; /* Pour rendre les bords arrondis */
+
+}
+
+.herbergements-card img {
+  width: 100%;
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+}
+
+.herbergements-card .card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+
+.card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.card-subtitle {
+  margin: 0;
+  font-size: 14px; 
+}
+
+.card-rating {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+
+
+/* hebergement 2 */
+
+
+.herbergements-card2 {
+  width:100%; /* Chaque carte occupe 32% de la largeur du parent */
+  margin-bottom: 20px; /* Espacement en bas pour éviter le chevauchement vertical */
+  box-sizing: border-box; /* S'assure que le padding et les bordures sont inclus dans la largeur */
+  display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+}
+
+.herbergements-card2 .card {
+  display: flex;
+  flex-direction: column; /* Ajoute cette ligne pour empiler l'image et le texte */
+  margin-top: 33px;
+  border: 1px solid #ddd; /* Optionnel : pour ajouter une bordure */
+  border-radius: 20px; /* Pour rendre les bords arrondis */
+
+}
+
+.herbergements-card2 img {
+  width: 100%;
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+}
+
+.herbergements-card2 .card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
 
 /****** Populaires ***********/
 .populaires {
