@@ -638,22 +638,22 @@ footer {
   }
   
   .nav-btn {
-    padding: 15px ;
-    background-color: transparent; /* Fond transparent */
-   
-    border: none;
-    border-top: 2px solid transparent; /* Bordure supérieure initialement transparente */
-    font-size: 16px;
-    text-decoration: none; /* Retire le soulignement */
-    cursor: pointer;
-   
-    transition: border-color 0.3s ease, color 0.3s ease; /* Transition fluide pour la couleur et la bordure */
+    border-top: none !important; /* Force la suppression de la bordure supérieure */
+    border-bottom: 2px solid transparent; /* Bordure inférieure transparente par défaut */
+    width: 100%; /* Assure une bonne largeur en mobile si nécessaire */
+    text-align: center; /* Centrer le texte si besoin */
 }
 
-/* Effet hover pour chaque bouton */
+/* Bordure inférieure active en responsive */
+.nav-btn:active, .nav-btn.active {
+    border-bottom: 2px solid #007bff; /* Affiche la bordure inférieure */
+    color: #0056b3; /* Change la couleur du texte */
+}
+
+/* Bordure inférieure au survol en responsive */
 .nav-btn:hover {
-    border-top: 2px solid #007bff; /* Change la bordure supérieure au survol */
-    color: #0056b3; /* Change la couleur du texte au survol */
+    border-bottom: 2px solid #007bff; /* Affiche la bordure inférieure au survol */
+    color: #0056b3; /* Change la couleur du texte */
 }
 
 .search-container {
@@ -773,7 +773,7 @@ footer{
   flex-direction: column;
   height: 100%;
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .apropos{
