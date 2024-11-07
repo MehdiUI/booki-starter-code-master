@@ -698,9 +698,13 @@ header{
   align-items: center;     /* Centre verticalement */
   margin: 0 auto;          /* Centrage horizontal */
   width: 100%;              /* Garde une largeur adaptée */
-  padding: 0;
 }
 
+.search-parent{
+  padding-left: 30px;
+  padding-right: 30PX;
+  width: 100%;
+}
 .searchicon{
   background-color: var(--main-color);
   color: var(--main-bg-color);
@@ -709,7 +713,7 @@ header{
   border-radius: 15px 15px 15px 15px;
   cursor: pointer;
   transition: background-color 0.3s;
-
+  padding: 50px;
   font-size: 18px;
 }
 
@@ -745,7 +749,7 @@ header{
     color: white;
   }
   .filter-container{
-      
+    padding: 0%;
     flex-wrap: wrap;
   }
   .filter-section{
@@ -767,6 +771,7 @@ header{
     margin-left: 5%;
     margin-top: 0;
   }
+
   .hebergements-and-populaires {
     display: flex;
     
@@ -774,17 +779,44 @@ header{
     justify-content: space-between;
 }
 
+.hebergements{
+  margin-top:  0px;
+  padding: 0;
+}
 .hebergements-and-populaires section{
   border-radius: 0;
 }
 .hebergements-and-populaires .hebergements{
   background-color: white;
 }
+.herbergements-card{
+  gap: 0;
+  margin-top: 10px;
+}
+
+.herbergements-card2 .card{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.herbergements-card2 {
+  gap:0px;
+}
+
+.herbergements-card .card{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
 .populaires-cards{
  
   flex-direction: column;
   width: 100%;
 }
+
+.populaires-cards .card {
+  display: flex;
+  margin-top: 15px;
+}
+
 .populaires-cards a{
   width: 100%;
 }
@@ -792,9 +824,7 @@ header{
 .populaires{
   margin-top: 0;
 }
-.hebergements{
-  margin-top: 20px;
-}
+
 .herbergements-card {
   flex-direction: column;
 }
@@ -808,14 +838,19 @@ header{
   
 }
 
-
-
 .activite{
   height: 100%;
 }
+
 .activite-card{
   flex-direction: column;
   height: 100%;
+  gap:0px;
+ 
+}
+.activite-card .card
+{
+  margin-top:15px;
 }
 
 footer{
@@ -827,11 +862,29 @@ footer{
 
 .apropos{
   margin:30px;
+
+  margin-bottom: 0;
+  width: 50%;
 }
+
+
 .nos_hebergements{
   margin:30px;
 }
 
+.nos_hebergements{
+  margin:30px;
+
+  margin-bottom: 0;
+  width: 50%;
+}
+
+.assistance{
+  margin:30px;
+
+  margin-bottom: 0;
+  width: 50%;
+}
 .assistance{
   margin:30px;
 }
