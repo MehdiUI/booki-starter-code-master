@@ -696,15 +696,17 @@ header{
   display: flex;
   justify-content: center; /* Centre horizontalement */
   align-items: center;     /* Centre verticalement */
-  margin: 0 auto;          /* Centrage horizontal */
+  margin: 0 ;          /* Centrage horizontal */
   width: 100%;              /* Garde une largeur adaptée */
+  max-width: 100%;
 }
 
 .search-parent{
-  padding-left: 30px;
-  padding-right: 30PX;
+  padding-left: 40px;
+  padding-right:40PX;
   width: 100%;
 }
+
 .searchicon{
   background-color: var(--main-color);
   color: var(--main-bg-color);
