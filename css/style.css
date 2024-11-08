@@ -475,6 +475,10 @@ a {
   margin-left: 10PX;
   border: none;
 }
+
+.more:hover{
+  cursor: pointer;
+}
 /* footer */
 
 
