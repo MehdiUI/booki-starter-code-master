@@ -13,6 +13,11 @@
     color: var(--main-color);
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-timeline: 1.5s; /* Contrôle la durée */
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -39,14 +44,14 @@ body {
   .nav-btn {
     padding: 15px ;
     background-color: transparent; /* Fond transparent */
-   
     border: none;
     border-top: 2px solid transparent; /* Bordure supérieure initialement transparente */
     font-size: 16px;
     text-decoration: none; /* Retire le soulignement */
     cursor: pointer;
-    transition: border-color 0.3s ease, color 0.3s ease; /* Transition fluide pour la couleur et la bordure */
 }
+
+
 
 /* Effet hover pour chaque bouton */
 .nav-btn:hover {
@@ -91,7 +96,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 40px; /* Largeur de l'icône */
-    height: 40px; /* Hauteur de l'icône */
+    height: 45px; /* Hauteur de l'icône */
     margin-right: 0px; /* Espace entre l'icône et le texte */
   }
 
@@ -136,6 +141,7 @@ body {
   .fa-magnifying-glass{
     display: none;
   }
+  
 /* Filtres */
 
 
@@ -148,7 +154,7 @@ body {
   .filter-label {
     font-weight: bold; /* Texte en gras */
     text-align: center; /* Centre le texte */
-    font-size: 1;
+    font-size: 0.1;
   }
 
   .filter-section {
@@ -725,7 +731,8 @@ header{
 }
 
 .filter-label{
-  margin-top: 20px
+  margin-top: 20px;
+  margin-left: 10%;
 }
 
 .fa-magnifying-glass{
@@ -766,12 +773,8 @@ header{
   }
   .filter-btn{
     width: 40%;
+    padding: 14px;
   }
-
-  .filter-label{
-    margin-left: 10%;
-  }
-
   
   .info{
     padding: 30px;
