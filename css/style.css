@@ -321,9 +321,10 @@ a {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between 5px;
   box-sizing: border-box;
-}
+  height: clamp(75px,4em,272px);}
+
 
 
 .card-title {
@@ -378,15 +379,16 @@ a {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between 5px;
   box-sizing: border-box;
+  height: clamp(80px,4em,272px);
 }
 
 
 /****** Populaires ***********/
 .populaires {
     width: 32%;
-   height: 32%;
+   height: 628px;
 }
 
 .populaires-title {
@@ -449,12 +451,14 @@ a {
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
+  margin-top: 33px;
+
 }
 
 .activite-card .card {
   display: flex;
   flex-direction: column; /* Ajoute cette ligne pour empiler l'image et le texte */
-  margin-top: 33px;
+
   border-radius: 20px; /* Pour rendre les bords arrondis */
   padding: 0;
 }
@@ -468,7 +472,7 @@ a {
 }
 
 .activite-card .card-content {
-  padding: 15px;
+  padding: 15px 15px 15px 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -571,7 +575,11 @@ footer {
 .assistance a{
   font-size: 16px;
 }
-
+.activite-card  .card-content .card-txt {
+  height: clamp(45px,4em,272px);
+  display: flex;
+align-items: center;
+}
 
 
 
@@ -590,6 +598,7 @@ footer {
 
     .populaires {
         width: 100%;
+        height: 32%;
         margin-top: 50px;
     }
 
@@ -603,10 +612,14 @@ footer {
         width: 30%;
     }
 
+  
     .populaires-cards .card-title {
         font-size: 14px;
     }
 
+    .activite-card .card-content {
+      justify-content: center;
+    }
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
@@ -621,7 +634,10 @@ footer {
       height: 270px;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
+  
     }
+
+    
 
     footer {
     height:20vh;
@@ -677,7 +693,8 @@ header{
     gap: 5px;
   }
 
-  .nav-btn { border-bottom: 2px solid #F2F2F2 ; 
+  .nav-btn { 
+    border-bottom: 2px solid #F2F2F2 ; 
     align-items: center;
     align-self: center;
     justify-content: center;
@@ -691,15 +708,11 @@ header{
 }
 
 .nav-btn:hover {
-  border: none;
-}
+  border-top: none;
+  border-bottom: 2px solid var(--main-color);
+color: var(--main-color);}
 
 /* Bordure inférieure active en mobile */
-.nav-btn.active, .nav-btn:active {
-  border-top: none ;
-    border-bottom: 2px solid #007bff; /* Bordure inférieure visible en état actif */
-    color: #0056b3; /* Couleur du texte active */
-}
 
 
 
