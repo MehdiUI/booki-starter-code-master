@@ -323,7 +323,7 @@ a {
   flex-direction: column;
   justify-content: space-between 5px;
   box-sizing: border-box;
-  height: clamp(75px,4em,272px);}
+  height: clamp(80px,4em,272px);}
 
 
 
